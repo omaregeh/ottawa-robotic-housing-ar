@@ -1,5 +1,7 @@
 # Ottawa Robotic Housing AR
 
+[Open the live WebAR demo](https://omaregeh.github.io/ottawa-robotic-housing-ar/) · [GitHub repository](https://github.com/omaregeh/ottawa-robotic-housing-ar)
+
 An actual, programmatically animated 3D construction-site demonstration for Algonquin College MGT2204, supporting SDG 11. Parliament Hill belongs to your **static printed poster**. There is no 3D Parliament model or replacement video.
 
 ## Purpose and SDG 11

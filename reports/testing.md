@@ -40,7 +40,7 @@ Headless checks launch a temporary Chrome profile. They do not attach to the use
 ## Remaining limitations and required acceptance work
 
 - **Final target not supplied:** the Parliament Hill poster and matching compiled `poster.mind` still need to be finalized, compiled and tested. The official sample and browser `.mind` upload are usable interim paths. The real printed artwork remains the static 2D background.
-- **No physical-device test:** Android/iOS camera permissions, optical acquisition, motion, realistic perspective, lighting, phone orientation, thermals and sustained frame rate remain to be checked on actual phones. No deployed HTTPS URL or QR to a real deployment is claimed.
+- **No physical-device test:** Android/iOS camera permissions, optical acquisition, motion, realistic perspective, lighting, phone orientation, thermals and sustained frame rate remain to be checked on actual phones. The HTTPS Pages deployment is verified below; no physical-phone or printed-QR acceptance test is claimed.
 - **Approximate animation:** one mesh per source asset, no rig. Whole robot positioning/yaw, whole-frame rise/settle and material fades are used. There is no independently moving bucket, arm joint, crane cable or crane wall. This is an illustrative sequence, not an autonomous planning or engineering simulation.
 - **Asset gaps:** no dedicated partially clad house or standalone lumber-stack GLB was identified. The selected verified frame and palletized-material collection are documented fallbacks. The rejected overhead vacuum-bar asset is excluded.
 - **Mobile tradeoff:** the default loads roughly 7.51 MiB of GLBs and 300,957 triangles. Geometry/texture detail is reduced. Standard quality is substantially heavier. The platform retains additional triangles to preserve a continuous working surface and integrated fencing/poles.
@@ -52,4 +52,16 @@ Use the README's phone acceptance checklist before presenting the campaign as a 
 
 ## GitHub preparation
 
-A clean file-only export was installed and built without raw GLBs. Runtime validation now works from the tracked optimized assets and verifies their checksums; `validate:originals` additionally requires the private raw inputs. The Pages build uses `/ottawa-robotic-housing-ar/`. See [GitHub readiness](github-readiness.md) for storage, credential scanning, licensing concerns and publication controls. No remote repository, push or public website was created during preparation.
+A clean file-only export was installed and built without raw GLBs. Runtime validation now works from the tracked optimized assets and verifies their checksums; `validate:originals` additionally requires the private raw inputs. The Pages build uses `/ottawa-robotic-housing-ar/`. See [GitHub readiness](github-readiness.md) for storage, credential scanning, licensing concerns and publication controls. Initial preparation was local; public publication and Pages deployment were subsequently authorized and completed as recorded below.
+
+## Verified public deployment
+
+- Repository: https://github.com/omaregeh/ottawa-robotic-housing-ar
+- HTTPS website: https://omaregeh.github.io/ottawa-robotic-housing-ar/
+- Initial deployed application commit: `9da2f352cb99953a8884d59e91950a9e801a3bc0`.
+- Successful GitHub Actions deployment: https://github.com/omaregeh/ottawa-robotic-housing-ar/actions/runs/44838816783
+- Live HTTP checks passed for 41 resources. All 22 optimized GLBs and the paired target/image matched the 24 tracked SHA-256 checksums. Thumbnail, license and inventory resources resolved; raw originals returned 404 and private inventory paths were absent.
+- Isolated Chrome tests passed against the deployed HTTPS URL: scene loading/placement, controls, completed-house transition, mobile viewport and asset viewer.
+- The deployed MindAR runtime passed synthetic-camera detection, anchored rendering, target loss/hide, timeline freeze, recovery and camera cleanup. No physical camera or phone was used.
+
+Documentation-only follow-up commits do not change the static application files. The Pages workflow remains manual so future code changes require an explicit workflow run to deploy.
