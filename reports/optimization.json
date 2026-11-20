@@ -1,0 +1,222 @@
+[
+  {
+    "id": "arm",
+    "quality": "lite",
+    "preparation": "Blender UV-aware collapse decimation + meshopt",
+    "originalBytes": 13267580,
+    "optimizedBytes": 498500,
+    "originalTriangles": 292585,
+    "triangles": 15903,
+    "textureLimit": 512
+  },
+  {
+    "id": "arm",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 13267580,
+    "optimizedBytes": 2071876,
+    "originalTriangles": 292585,
+    "triangles": 85569,
+    "textureLimit": 1024
+  },
+  {
+    "id": "rover",
+    "quality": "lite",
+    "preparation": "Blender UV-aware collapse decimation + meshopt",
+    "originalBytes": 11699200,
+    "optimizedBytes": 442836,
+    "originalTriangles": 281221,
+    "triangles": 14598,
+    "textureLimit": 512
+  },
+  {
+    "id": "rover",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 11699200,
+    "optimizedBytes": 1375656,
+    "originalTriangles": 281221,
+    "triangles": 49999,
+    "textureLimit": 1024
+  },
+  {
+    "id": "frame",
+    "quality": "lite",
+    "preparation": "Blender UV-aware collapse decimation + meshopt",
+    "originalBytes": 11789552,
+    "optimizedBytes": 305692,
+    "originalTriangles": 285177,
+    "triangles": 11735,
+    "textureLimit": 512
+  },
+  {
+    "id": "frame",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 11789552,
+    "optimizedBytes": 1137576,
+    "originalTriangles": 285177,
+    "triangles": 49994,
+    "textureLimit": 1024
+  },
+  {
+    "id": "finishedAlt",
+    "quality": "lite",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 11294296,
+    "optimizedBytes": 1004332,
+    "originalTriangles": 277958,
+    "triangles": 37900,
+    "textureLimit": 1024
+  },
+  {
+    "id": "finishedAlt",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 11294296,
+    "optimizedBytes": 1248864,
+    "originalTriangles": 277958,
+    "triangles": 49998,
+    "textureLimit": 1024
+  },
+  {
+    "id": "finished",
+    "quality": "lite",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 14743828,
+    "optimizedBytes": 2387568,
+    "originalTriangles": 298652,
+    "triangles": 91771,
+    "textureLimit": 1024
+  },
+  {
+    "id": "finished",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 14743828,
+    "optimizedBytes": 2545880,
+    "originalTriangles": 298652,
+    "triangles": 91829,
+    "textureLimit": 1024
+  },
+  {
+    "id": "frameAlt",
+    "quality": "lite",
+    "preparation": "Blender UV-aware collapse decimation + meshopt",
+    "originalBytes": 11544876,
+    "optimizedBytes": 247072,
+    "originalTriangles": 288120,
+    "triangles": 9130,
+    "textureLimit": 512
+  },
+  {
+    "id": "frameAlt",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 11544876,
+    "optimizedBytes": 1077368,
+    "originalTriangles": 288120,
+    "triangles": 49996,
+    "textureLimit": 1024
+  },
+  {
+    "id": "lumber",
+    "quality": "lite",
+    "preparation": "Blender UV-aware collapse decimation + meshopt",
+    "originalBytes": 38666764,
+    "optimizedBytes": 510628,
+    "originalTriangles": 981313,
+    "triangles": 16771,
+    "textureLimit": 512
+  },
+  {
+    "id": "lumber",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 38666764,
+    "optimizedBytes": 2545024,
+    "originalTriangles": 981313,
+    "triangles": 111160,
+    "textureLimit": 1024
+  },
+  {
+    "id": "excavator",
+    "quality": "lite",
+    "preparation": "Blender UV-aware collapse decimation + meshopt",
+    "originalBytes": 41526584,
+    "optimizedBytes": 463620,
+    "originalTriangles": 984249,
+    "triangles": 13166,
+    "textureLimit": 512
+  },
+  {
+    "id": "excavator",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 41526584,
+    "optimizedBytes": 3202164,
+    "originalTriangles": 984249,
+    "triangles": 136640,
+    "textureLimit": 1024
+  },
+  {
+    "id": "crane",
+    "quality": "lite",
+    "preparation": "Blender UV-aware collapse decimation + meshopt",
+    "originalBytes": 44800960,
+    "optimizedBytes": 504632,
+    "originalTriangles": 988808,
+    "triangles": 12383,
+    "textureLimit": 512
+  },
+  {
+    "id": "crane",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 44800960,
+    "optimizedBytes": 4825288,
+    "originalTriangles": 988808,
+    "triangles": 214086,
+    "textureLimit": 1024
+  },
+  {
+    "id": "printer",
+    "quality": "lite",
+    "preparation": "Blender UV-aware collapse decimation + meshopt",
+    "originalBytes": 47859620,
+    "optimizedBytes": 460172,
+    "originalTriangles": 979777,
+    "triangles": 12055,
+    "textureLimit": 512
+  },
+  {
+    "id": "printer",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 47859620,
+    "optimizedBytes": 7540624,
+    "originalTriangles": 979777,
+    "triangles": 366263,
+    "textureLimit": 1024
+  },
+  {
+    "id": "ground",
+    "quality": "lite",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 41313604,
+    "optimizedBytes": 2757268,
+    "originalTriangles": 935563,
+    "triangles": 124630,
+    "textureLimit": 1024
+  },
+  {
+    "id": "ground",
+    "quality": "standard",
+    "preparation": "Meshopt simplification only",
+    "originalBytes": 41313604,
+    "optimizedBytes": 4299908,
+    "originalTriangles": 935563,
+    "triangles": 124730,
+    "textureLimit": 2048
+  }
+]

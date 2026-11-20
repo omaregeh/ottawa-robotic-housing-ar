@@ -1,0 +1,3 @@
+import {NodeIO} from '@gltf-transform/core';import {ALL_EXTENSIONS} from '@gltf-transform/extensions';import {MeshoptDecoder} from 'meshoptimizer';import fs from 'node:fs/promises';
+await MeshoptDecoder.ready;const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.decoder':MeshoptDecoder});const manifest=JSON.parse(await fs.readFile('public/models/manifest.json'));await fs.mkdir('.local/render',{recursive:true});
+for(const a of manifest){const doc=await io.read(`public/${a.quality.lite}`);for(const ext of doc.getRoot().listExtensionsUsed())if(ext.extensionName==='EXT_meshopt_compression')ext.dispose();await io.write(`.local/render/${a.id}.glb`,doc);}

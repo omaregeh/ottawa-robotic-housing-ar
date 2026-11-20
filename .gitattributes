@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.glb binary
+*.mind binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+# Runtime assets deliberately use regular Git; see reports/github-readiness.md.

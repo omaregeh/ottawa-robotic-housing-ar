@@ -1,0 +1,57 @@
+[
+  {
+    "filename": "sample_2026-11-20T071123.041.glb",
+    "id": "arm",
+    "label": "Tracked construction arm"
+  },
+  {
+    "filename": "sample_2026-11-20T071708.664.glb",
+    "id": "rover",
+    "label": "Material delivery rover"
+  },
+  {
+    "filename": "sample_2026-11-20T073451.446.glb",
+    "id": "frame",
+    "label": "Wooden house frame"
+  },
+  {
+    "filename": "sample_2026-11-20T073844.642.glb",
+    "id": "finishedAlt",
+    "label": "Modular house \u00b7 charcoal roof"
+  },
+  {
+    "filename": "sample_2026-11-20T074504.681.glb",
+    "id": "finished",
+    "label": "Modular house \u00b7 solar roof"
+  },
+  {
+    "filename": "sample_2026-11-20T075042.939.glb",
+    "id": "frameAlt",
+    "label": "Timber frame \u00b7 slab and lumber"
+  },
+  {
+    "filename": "Palletized Building Materials Collection (3).glb",
+    "id": "lumber",
+    "label": "Palletized materials and lumber"
+  },
+  {
+    "filename": "Autonomous Yellow Excavator Render.glb",
+    "id": "excavator",
+    "label": "Cabless autonomous excavator"
+  },
+  {
+    "filename": "Robotic Crawler Crane Lifting Wall Panel.glb",
+    "id": "crane",
+    "label": "Tracked crane with integrated wall"
+  },
+  {
+    "filename": "Industrial Concrete 3D Printer Building Foundations-2.glb",
+    "id": "printer",
+    "label": "Concrete 3D printer"
+  },
+  {
+    "filename": "Isometric Construction Site Diorama.glb",
+    "id": "ground",
+    "label": "Construction-site platform"
+  }
+]

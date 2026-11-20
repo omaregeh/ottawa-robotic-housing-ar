@@ -1,0 +1,19 @@
+import { downloadJSON,validConfig,escapeHTML } from './utils.js';
+export function mountEditor(host,config,diorama,onChange){
+ let selected='ground';
+ host.innerHTML=`<h2>Scene editor</h2><p>Timeline paused while editing. Coordinates: X across, Y up, Z toward viewer. Angles in radians.</p><label>Object <select id="edit-object">${Object.keys(config.assets).map(k=>`<option>${k}</option>`).join('')}</select></label><div id="edit-fields"></div><div class="button-row"><button id="save-config">Export JSON</button><button id="remember-config">Save in browser</button></div><label class="file-button">Import scene JSON<input id="import-config" type="file" accept=".json"></label><p id="edit-message" role="status"></p><h3>Placement checks</h3><p id="placement-checks"></p>`;
+ const fields=host.querySelector('#edit-fields');
+ const render=()=>{const c=config.assets[selected];fields.innerHTML=`<label>Model<select id="edit-model">${diorama.manifest.map(a=>`<option value="${a.id}" ${a.id===c.asset?'selected':''}>${escapeHTML(a.label)}</option>`).join('')}</select></label>${['position','rotation'].map(v=>`<fieldset><legend>${v}</legend>${['X','Y','Z'].map((axis,i)=>`<label>${axis}<input type="number" step="0.02" data-field="${v}" data-axis="${i}" value="${c[v][i]}"></label>`).join('')}</fieldset>`).join('')}${['width','scale','groundOffset'].map(v=>`<label>${v}<input type="number" step="0.02" ${v==='groundOffset'?'':'min="0.01"'} data-field="${v}" value="${c[v]}"></label>`).join('')}<label><input type="checkbox" id="edit-visible" ${c.visible?'checked':''}> Visible</label><label><input type="checkbox" id="edit-animation" ${c.animation?.enabled?'checked':''}> Animation enabled</label><label>Movement amplitude<input id="edit-amplitude" type="number" min="0" max="2" step=".1" value="${c.animation?.amplitude??1}"></label>`;
+ fields.querySelectorAll('[data-field]').forEach(input=>input.addEventListener('input',()=>{const value=Number(input.value);if(!Number.isFinite(value)||(input.min&&value<Number(input.min)))return;const f=input.dataset.field;if(input.dataset.axis!==undefined)c[f][Number(input.dataset.axis)]=value;else c[f]=value;diorama.applyTransform(selected);if(selected==='ground')for(const k of diorama.entries.keys())if(k!=='ground')diorama.applyTransform(k);onChange();}));
+ fields.querySelector('#edit-visible').onchange=async(e)=>{await diorama.toggle(selected,e.target.checked);onChange();};
+ fields.querySelector('#edit-animation').onchange=e=>{c.animation??={};c.animation.enabled=e.target.checked;};
+ fields.querySelector('#edit-amplitude').oninput=e=>{c.animation??={};c.animation.amplitude=Math.max(0,Math.min(2,Number(e.target.value)||0));};
+ fields.querySelector('#edit-model').onchange=async(e)=>{c.asset=e.target.value; // reload the page with the exported configuration for safe GPU cleanup
+  localStorage.setItem('ottawa-scene-v1',JSON.stringify(config));location.reload();};
+ };
+ host.querySelector('#edit-object').onchange=e=>{selected=e.target.value;render();};
+ host.querySelector('#save-config').onclick=()=>downloadJSON('scene.json',config);
+ host.querySelector('#remember-config').onclick=()=>{localStorage.setItem('ottawa-scene-v1',JSON.stringify(config));host.querySelector('#edit-message').textContent='Saved on this browser. Export JSON to update the project default.';};
+ host.querySelector('#import-config').onchange=async e=>{try{const data=validConfig(JSON.parse(await e.target.files[0].text()));if(Object.values(data.assets).some(c=>!diorama.manifest.some(a=>a.id===c.asset)))throw Error('Unknown model assignment');localStorage.setItem('ottawa-scene-v1',JSON.stringify(data));location.reload();}catch(err){host.querySelector('#edit-message').textContent=err.message;}};
+ render();return ()=>{const checks=diorama.diagnostics();host.querySelector('#placement-checks').textContent=checks.length?checks.join('; '):'No bounding-box overlaps or off-platform objects detected.';};
+}

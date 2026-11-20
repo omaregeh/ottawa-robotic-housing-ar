@@ -1,0 +1,10 @@
+{
+  "timezone": "America/Toronto",
+  "window": [
+    "2026-11-18",
+    "2026-11-21"
+  ],
+  "selection": "creation OR modification date",
+  "totalGLBsScanned": 11,
+  "candidates": 11
+}

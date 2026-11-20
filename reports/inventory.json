@@ -1,0 +1,948 @@
+[
+  {
+    "filename": "sample_2026-11-20T071123.041.glb",
+    "modified": "2026-11-20T01:11:31.369330-05:00",
+    "creation": "2026-11-20T01:11:29-05:00",
+    "bytes": 13267580,
+    "sha256": "59d5790a35306b631058666a246d855808ba8fb8299a52d8e3359187439a8763",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 268570,
+    "triangles": 292585,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.470691442489624,
+        -0.5007852911949158,
+        -0.25160080194473267
+      ],
+      "max": [
+        0.48716649413108826,
+        0.500604510307312,
+        0.2515939176082611
+      ],
+      "dimensions": [
+        0.9578579366207123,
+        1.0013898015022278,
+        0.5031947195529938
+      ],
+      "center": [
+        0.008237525820732117,
+        -9.039044380187988e-05,
+        -3.4421682357788086e-06
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 1062372
+      },
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 98104
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "world",
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count"
+    ]
+  },
+  {
+    "filename": "sample_2026-11-20T071708.664.glb",
+    "modified": "2026-11-20T01:17:17.201868-05:00",
+    "creation": "2026-11-20T01:17:15-05:00",
+    "bytes": 11699200,
+    "sha256": "40c587bb79f0ac96281d489299979b71dba511b24a3a80482ade4de4f1ef60af",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 219043,
+    "triangles": 281221,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.26207172870635986,
+        -0.24359458684921265,
+        -0.5008830428123474
+      ],
+      "max": [
+        0.2622307538986206,
+        0.24303755164146423,
+        0.5009761452674866
+      ],
+      "dimensions": [
+        0.5243024826049805,
+        0.4866321384906769,
+        1.001859188079834
+      ],
+      "center": [
+        7.95125961303711e-05,
+        -0.00027851760387420654,
+        4.655122756958008e-05
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 987956
+      },
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 325368
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "world",
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count"
+    ]
+  },
+  {
+    "filename": "sample_2026-11-20T073451.446.glb",
+    "modified": "2026-11-20T01:34:58.064566-05:00",
+    "creation": "2026-11-20T01:34:57-05:00",
+    "bytes": 11789552,
+    "sha256": "9e55e40c95227dc920ac3c2073536fe2c67c1808479f25de4b7a9f5604cabc09",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 236123,
+    "triangles": 285177,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.5008692741394043,
+        -0.33579355478286743,
+        -0.4246465861797333
+      ],
+      "max": [
+        0.500856339931488,
+        0.3369690179824829,
+        0.4246678948402405
+      ],
+      "dimensions": [
+        1.0017256140708923,
+        0.6727625727653503,
+        0.8493144810199738
+      ],
+      "center": [
+        -6.467103958129883e-06,
+        0.0005877315998077393,
+        1.0654330253601074e-05
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 756084
+      },
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 53564
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "world",
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count"
+    ]
+  },
+  {
+    "filename": "sample_2026-11-20T073844.642.glb",
+    "modified": "2026-11-20T01:38:59.617777-05:00",
+    "creation": "2026-11-20T01:38:56-05:00",
+    "bytes": 11294296,
+    "sha256": "9b4133d3e8ebe40c67e775c12ea844761018da3f95060336513d87c42c58c79e",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 209944,
+    "triangles": 277958,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.49995043873786926,
+        -0.24645516276359558,
+        -0.32897037267684937
+      ],
+      "max": [
+        0.5009744167327881,
+        0.24822121858596802,
+        0.3270660638809204
+      ],
+      "dimensions": [
+        1.0009248554706573,
+        0.4946763813495636,
+        0.6560364365577698
+      ],
+      "center": [
+        0.0005119889974594116,
+        0.0008830279111862183,
+        -0.0009521543979644775
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 1059060
+      },
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 179684
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "world",
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count"
+    ]
+  },
+  {
+    "filename": "sample_2026-11-20T074504.681.glb",
+    "modified": "2026-11-20T01:45:18.728857-05:00",
+    "creation": "2026-11-20T01:45:15-05:00",
+    "bytes": 14743828,
+    "sha256": "43a323df659434ac6804ed7049ea2e894c08ba80bf3b9dbc41d2e45f118bb88f",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 286954,
+    "triangles": 298652,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.5009515285491943,
+        -0.28532925248146057,
+        -0.4182690382003784
+      ],
+      "max": [
+        0.5009718537330627,
+        0.2850220203399658,
+        0.4172861874103546
+      ],
+      "dimensions": [
+        1.001923382282257,
+        0.5703512728214264,
+        0.835555225610733
+      ],
+      "center": [
+        1.0162591934204102e-05,
+        -0.0001536160707473755,
+        -0.0004914253950119019
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 1399052
+      },
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 576576
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "world",
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count"
+    ]
+  },
+  {
+    "filename": "sample_2026-11-20T075042.939.glb",
+    "modified": "2026-11-20T01:50:51.096528-05:00",
+    "creation": "2026-11-20T01:50:48-05:00",
+    "bytes": 11544876,
+    "sha256": "fdb992cd6702b287368ac70360ef9b5b55284fd24e8b8785974658a07eb980f9",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 229511,
+    "triangles": 288120,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.45826980471611023,
+        -0.3728204667568207,
+        -0.5008295774459839
+      ],
+      "max": [
+        0.4930574893951416,
+        0.37359657883644104,
+        0.5009305477142334
+      ],
+      "dimensions": [
+        0.9513272941112518,
+        0.7464170455932617,
+        1.0017601251602173
+      ],
+      "center": [
+        0.017393842339515686,
+        0.00038805603981018066,
+        5.048513412475586e-05
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 702996
+      },
+      {
+        "size": [
+          2048,
+          2048
+        ],
+        "format": "WEBP",
+        "bytes": 38244
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "world",
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count"
+    ]
+  },
+  {
+    "filename": "Palletized Building Materials Collection (3).glb",
+    "modified": "2026-11-20T03:48:00.307810-05:00",
+    "creation": "2026-11-20T03:48:00-05:00",
+    "bytes": 38666764,
+    "sha256": "662ec5faaa6cdcf5b64e0fe1f1706d0d2e2f7001ca6899b08ea30ec84999aeb5",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 712479,
+    "triangles": 981313,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.5008723139762878,
+        -0.2266436517238617,
+        -0.32722246646881104
+      ],
+      "max": [
+        0.500828206539154,
+        0.22588276863098145,
+        0.32683736085891724
+      ],
+      "dimensions": [
+        1.001700520515442,
+        0.45252642035484314,
+        0.6540598273277283
+      ],
+      "center": [
+        -2.205371856689453e-05,
+        -0.0003804415464401245,
+        -0.00019255280494689941
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 3249872
+      },
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 839984
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count",
+      "Large file"
+    ]
+  },
+  {
+    "filename": "Autonomous Yellow Excavator Render.glb",
+    "modified": "2026-11-20T03:58:47.840439-05:00",
+    "creation": "2026-11-20T03:58:47-05:00",
+    "bytes": 41526584,
+    "sha256": "65ca285bcdac669e652f600e7c5183acabffab46dda28634036fd70ae2c49a2e",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 780145,
+    "triangles": 984249,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.5009067058563232,
+        -0.2880650758743286,
+        -0.22853554785251617
+      ],
+      "max": [
+        0.5007711052894592,
+        0.2877793312072754,
+        0.2313029021024704
+      ],
+      "dimensions": [
+        1.0016778111457825,
+        0.575844407081604,
+        0.4598384499549866
+      ],
+      "center": [
+        -6.780028343200684e-05,
+        -0.00014287233352661133,
+        0.0013836771249771118
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 3771752
+      },
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 977384
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count",
+      "Large file"
+    ]
+  },
+  {
+    "filename": "Robotic Crawler Crane Lifting Wall Panel.glb",
+    "modified": "2026-11-20T04:04:47.537973-05:00",
+    "creation": "2026-11-20T04:04:47-05:00",
+    "bytes": 44800960,
+    "sha256": "3b8f20166cc4349c4a861a4c21071bda0919d054a95cb833046ef73ea741b938",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 858687,
+    "triangles": 988808,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.2269318401813507,
+        -0.30872485041618347,
+        -0.5008082985877991
+      ],
+      "max": [
+        0.22538088262081146,
+        0.30678075551986694,
+        0.501026451587677
+      ],
+      "dimensions": [
+        0.45231272280216217,
+        0.6155056059360504,
+        1.001834750175476
+      ],
+      "center": [
+        -0.0007754787802696228,
+        -0.0009720474481582642,
+        0.00010907649993896484
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 4231236
+      },
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 1224220
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count",
+      "Large file"
+    ]
+  },
+  {
+    "filename": "Industrial Concrete 3D Printer Building Foundations-2.glb",
+    "modified": "2026-11-20T04:15:50.137488-05:00",
+    "creation": "2026-11-20T04:15:49-05:00",
+    "bytes": 47859620,
+    "sha256": "7d4bb438bc8ffa5c43006ad9c6777bc88b7ee41618b4d3214dd5d08ef35747db",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 987269,
+    "triangles": 979777,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.5004554986953735,
+        -0.289615273475647,
+        -0.374068021774292
+      ],
+      "max": [
+        0.5004668831825256,
+        0.28917616605758667,
+        0.3758799135684967
+      ],
+      "dimensions": [
+        1.0009223818778992,
+        0.5787914395332336,
+        0.7499479353427887
+      ],
+      "center": [
+        5.692243576049805e-06,
+        -0.00021955370903015137,
+        0.000905945897102356
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 3702176
+      },
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 805692
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count",
+      "Large file"
+    ]
+  },
+  {
+    "filename": "Isometric Construction Site Diorama.glb",
+    "modified": "2026-11-20T04:36:20.285183-05:00",
+    "creation": "2026-11-20T04:36:20-05:00",
+    "bytes": 41313604,
+    "sha256": "be86211e8698c81ea34452fa77ec157d3e155da0db05c6786b515ba7ea8da0c6",
+    "meshes": 1,
+    "meshNodes": 1,
+    "primitives": 1,
+    "vertices": 747232,
+    "triangles": 935563,
+    "animations": [],
+    "skins": 0,
+    "bounds": {
+      "min": [
+        -0.49951234459877014,
+        -0.15780657529830933,
+        -0.4164413809776306
+      ],
+      "max": [
+        0.49968671798706055,
+        0.15947329998016357,
+        0.413689523935318
+      ],
+      "dimensions": [
+        0.9991990625858307,
+        0.3172798752784729,
+        0.8301309049129486
+      ],
+      "center": [
+        8.718669414520264e-05,
+        0.000833362340927124,
+        -0.001375928521156311
+      ]
+    },
+    "centered": true,
+    "groundAtY0": false,
+    "textures": [
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 4788528
+      },
+      {
+        "size": [
+          4096,
+          4096
+        ],
+        "format": "WEBP",
+        "bytes": 1385072
+      }
+    ],
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "roughnessFactor": 1.0,
+          "metallicFactor": 1.0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "nodeNames": [
+      "geometry_0"
+    ],
+    "independentMovement": "No validated articulation; inspect mesh nodes before moving components.",
+    "warnings": [
+      "High polygon count",
+      "Large file"
+    ]
+  }
+]

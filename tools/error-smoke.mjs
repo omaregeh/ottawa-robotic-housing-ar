@@ -1,0 +1,10 @@
+import {chromium} from '@playwright/test';import assert from 'node:assert/strict';import fs from 'node:fs/promises';
+const browser=await chromium.launch({executablePath:process.env.CHROME_BIN??'/usr/bin/google-chrome',headless:true,args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const p=await browser.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));
+try{
+ await p.addInitScript(()=>{navigator.mediaDevices.getUserMedia=async()=>{throw new DOMException('Denied test permission','NotAllowedError');};});
+ await p.goto('http://localhost:5173/');await p.waitForFunction(()=>window.__housing);await p.getByRole('button',{name:'View in augmented reality'}).click();await p.getByRole('button',{name:'Start camera',exact:true}).click();await p.waitForFunction(()=>document.querySelector('#ar-message').textContent.includes('camera is unavailable'));
+ assert.equal(await p.evaluate(()=>document.body.classList.contains('ar-mode')),false);assert.equal(await p.locator('#preview-canvas canvas').count(),1);await p.setViewportSize({width:900,height:700});assert.equal(await p.locator('video').count(),0);
+ await p.getByRole('button',{name:'Close AR setup'}).click();await p.getByRole('button',{name:'Play',exact:true}).click();await p.getByRole('button',{name:'View in augmented reality'}).click();await p.route('**/targets/development.mind',route=>route.fulfill({status:200,contentType:'application/octet-stream',body:'invalid target bytes'}));await p.getByRole('button',{name:'Start camera',exact:true}).click();await p.waitForFunction(()=>document.querySelector('#ar-message').textContent.includes('not a valid compiled'));
+ await fs.writeFile('reports/error-smoke.json',JSON.stringify({deniedCameraFallback:true,invalidTargetFallback:true,errors},null,2));assert.deepEqual(errors,[]);console.log('Denied camera, resize after failure, preview recovery, and malformed target handling passed.');
+}catch(error){await fs.writeFile('reports/error-smoke.json',JSON.stringify({error:error.message,errors,body:await p.locator('body').innerText()},null,2));throw error;}finally{await browser.close();}

@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "duration": 54,
+  "ar": {
+    "targetUrl": "targets/poster.mind",
+    "targetIndex": 0,
+    "scale": 0.3,
+    "position": [
+      0,
+      -0.2,
+      0
+    ],
+    "rotation": [
+      1.5707963267948966,
+      0,
+      0
+    ]
+  },
+  "assets": {
+    "ground": {
+      "asset": "ground",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 1,
+      "width": 3,
+      "groundOffset": 0,
+      "visible": true,
+      "animation": {
+        "enabled": false
+      }
+    },
+    "frame": {
+      "asset": "frame",
+      "position": [
+        0,
+        0,
+        -0.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 1,
+      "width": 0.83,
+      "groundOffset": 0,
+      "visible": true,
+      "animation": {
+        "enabled": true
+      }
+    },
+    "finished": {
+      "asset": "finished",
+      "position": [
+        0,
+        0,
+        -0.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 1,
+      "width": 0.9,
+      "groundOffset": 0,
+      "visible": true,
+      "animation": {
+        "enabled": true
+      }
+    },
+    "arm": {
+      "asset": "arm",
+      "position": [
+        -0.86,
+        0,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0.4,
+        0
+      ],
+      "scale": 1,
+      "width": 0.43,
+      "groundOffset": 0,
+      "visible": true,
+      "animation": {
+        "enabled": true,
+        "amplitude": 1
+      }
+    },
+    "excavator": {
+      "asset": "excavator",
+      "position": [
+        0.91,
+        0,
+        0.44
+      ],
+      "rotation": [
+        0,
+        2.7,
+        0
+      ],
+      "scale": 1,
+      "width": 0.48,
+      "groundOffset": 0,
+      "visible": true,
+      "animation": {
+        "enabled": true,
+        "amplitude": 1
+      }
+    },
+    "rover": {
+      "asset": "rover",
+      "position": [
+        -0.94,
+        0,
+        -0.31
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 1,
+      "width": 0.28,
+      "groundOffset": 0,
+      "visible": true,
+      "animation": {
+        "enabled": true,
+        "amplitude": 1
+      }
+    },
+    "lumber": {
+      "asset": "lumber",
+      "position": [
+        -0.64,
+        0,
+        -0.68
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 1,
+      "width": 0.35,
+      "groundOffset": 0,
+      "visible": true,
+      "animation": {
+        "enabled": false
+      }
+    },
+    "crane": {
+      "asset": "crane",
+      "position": [
+        0.91,
+        0,
+        -0.54
+      ],
+      "rotation": [
+        0,
+        0.65,
+        0
+      ],
+      "scale": 1,
+      "width": 0.55,
+      "groundOffset": 0,
+      "visible": true,
+      "animation": {
+        "enabled": true,
+        "amplitude": 1
+      }
+    },
+    "printer": {
+      "asset": "printer",
+      "position": [
+        0,
+        0,
+        -0.78
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 1,
+      "width": 0.45,
+      "groundOffset": 0,
+      "visible": false,
+      "animation": {
+        "enabled": true,
+        "amplitude": 1
+      }
+    }
+  }
+}

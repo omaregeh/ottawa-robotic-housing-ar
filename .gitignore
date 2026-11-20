@@ -1,0 +1,63 @@
+# Dependencies and package-manager state
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+
+# Vite/build/test output
+dist/
+.vite/
+.vite-temp/
+coverage/
+playwright-report/
+test-results/
+
+# Private working copies, raw models, and generated camera fixtures
+.local/
+public/models/original/
+*.y4m
+*.blend
+*.blend1
+
+# Credentials and machine-specific environment/configuration
+.env
+.env.*
+!.env.example
+*.local
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+
+# Logs, caches, temporary and editor files
+*.log
+.cache/
+__pycache__/
+*.py[cod]
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Generated QA output (curated reports, inventory and required thumbnails stay tracked)
+reports/*-smoke.json
+reports/browser-smoke-initial.json
+reports/validation.json
+reports/scene-bounds.json
+reports/scene-top.png
+reports/scene-editor.png
+reports/ar-synthetic-*.png
+reports/preview-*.png
+reports/asset-viewer.png
+reports/reference-contact-sheet.jpg
+reports/optimized-contact-sheet.jpg
+reports/optimized-thumbnails/

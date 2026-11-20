@@ -1,0 +1,123 @@
+[
+  {
+    "id": "arm",
+    "label": "Tracked construction arm",
+    "filename": "sample_2026-11-20T071123.041.glb",
+    "original": "models/original/sample_2026-11-20T071123.041.glb",
+    "thumbnail": "reports/thumbnails/00.png",
+    "quality": {
+      "lite": "models/optimized/arm-lite.glb",
+      "standard": "models/optimized/arm-standard.glb"
+    }
+  },
+  {
+    "id": "rover",
+    "label": "Material delivery rover",
+    "filename": "sample_2026-11-20T071708.664.glb",
+    "original": "models/original/sample_2026-11-20T071708.664.glb",
+    "thumbnail": "reports/thumbnails/01.png",
+    "quality": {
+      "lite": "models/optimized/rover-lite.glb",
+      "standard": "models/optimized/rover-standard.glb"
+    }
+  },
+  {
+    "id": "frame",
+    "label": "Wooden house frame",
+    "filename": "sample_2026-11-20T073451.446.glb",
+    "original": "models/original/sample_2026-11-20T073451.446.glb",
+    "thumbnail": "reports/thumbnails/02.png",
+    "quality": {
+      "lite": "models/optimized/frame-lite.glb",
+      "standard": "models/optimized/frame-standard.glb"
+    }
+  },
+  {
+    "id": "finishedAlt",
+    "label": "Modular house · charcoal roof",
+    "filename": "sample_2026-11-20T073844.642.glb",
+    "original": "models/original/sample_2026-11-20T073844.642.glb",
+    "thumbnail": "reports/thumbnails/03.png",
+    "quality": {
+      "lite": "models/optimized/finishedAlt-lite.glb",
+      "standard": "models/optimized/finishedAlt-standard.glb"
+    }
+  },
+  {
+    "id": "finished",
+    "label": "Modular house · solar roof",
+    "filename": "sample_2026-11-20T074504.681.glb",
+    "original": "models/original/sample_2026-11-20T074504.681.glb",
+    "thumbnail": "reports/thumbnails/04.png",
+    "quality": {
+      "lite": "models/optimized/finished-lite.glb",
+      "standard": "models/optimized/finished-standard.glb"
+    }
+  },
+  {
+    "id": "frameAlt",
+    "label": "Timber frame · slab and lumber",
+    "filename": "sample_2026-11-20T075042.939.glb",
+    "original": "models/original/sample_2026-11-20T075042.939.glb",
+    "thumbnail": "reports/thumbnails/05.png",
+    "quality": {
+      "lite": "models/optimized/frameAlt-lite.glb",
+      "standard": "models/optimized/frameAlt-standard.glb"
+    }
+  },
+  {
+    "id": "lumber",
+    "label": "Palletized materials and lumber",
+    "filename": "Palletized Building Materials Collection (3).glb",
+    "original": "models/original/Palletized Building Materials Collection (3).glb",
+    "thumbnail": "reports/thumbnails/06.png",
+    "quality": {
+      "lite": "models/optimized/lumber-lite.glb",
+      "standard": "models/optimized/lumber-standard.glb"
+    }
+  },
+  {
+    "id": "excavator",
+    "label": "Cabless autonomous excavator",
+    "filename": "Autonomous Yellow Excavator Render.glb",
+    "original": "models/original/Autonomous Yellow Excavator Render.glb",
+    "thumbnail": "reports/thumbnails/07.png",
+    "quality": {
+      "lite": "models/optimized/excavator-lite.glb",
+      "standard": "models/optimized/excavator-standard.glb"
+    }
+  },
+  {
+    "id": "crane",
+    "label": "Tracked crane with integrated wall",
+    "filename": "Robotic Crawler Crane Lifting Wall Panel.glb",
+    "original": "models/original/Robotic Crawler Crane Lifting Wall Panel.glb",
+    "thumbnail": "reports/thumbnails/08.png",
+    "quality": {
+      "lite": "models/optimized/crane-lite.glb",
+      "standard": "models/optimized/crane-standard.glb"
+    }
+  },
+  {
+    "id": "printer",
+    "label": "Concrete 3D printer",
+    "filename": "Industrial Concrete 3D Printer Building Foundations-2.glb",
+    "original": "models/original/Industrial Concrete 3D Printer Building Foundations-2.glb",
+    "thumbnail": "reports/thumbnails/09.png",
+    "quality": {
+      "lite": "models/optimized/printer-lite.glb",
+      "standard": "models/optimized/printer-standard.glb"
+    }
+  },
+  {
+    "id": "ground",
+    "label": "Construction-site platform",
+    "filename": "Isometric Construction Site Diorama.glb",
+    "original": "models/original/Isometric Construction Site Diorama.glb",
+    "thumbnail": "reports/thumbnails/10.png",
+    "quality": {
+      "lite": "models/optimized/ground-lite.glb",
+      "standard": "models/optimized/ground-standard.glb"
+    }
+  }
+]

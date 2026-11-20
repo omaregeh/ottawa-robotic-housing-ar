@@ -1,0 +1,24 @@
+/** Browser integration tests run in an isolated headless profile, never the user's browser. */
+import { chromium } from '@playwright/test';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({executablePath:process.env.CHROME_BIN??'/usr/bin/google-chrome',headless:true,args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1440,height:1000}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));const failed=[];page.on('requestfailed',r=>failed.push({url:r.url(),error:r.failure()}));
+await page.goto(process.env.TEST_URL??'http://localhost:5173/');
+await page.waitForFunction(()=>window.__housing?.diorama.entries.size>=8,null,{timeout:60000});
+await page.getByRole('button',{name:'Pause',exact:true}).click();
+const initial=await page.evaluate(()=>({errors:window.__housing.diorama.errors,keys:[...window.__housing.diorama.entries.keys()],checks:window.__housing.diagnostics(),placements:[...window.__housing.diorama.entries].map(([k,e])=>({key:k,position:e.pivot.position.toArray(),scale:e.oriented.scale.x,off:e.offPlatform})),render:window.__housing.renderer.info.render}));
+await fs.writeFile('reports/browser-smoke-initial.json',JSON.stringify(initial,null,2));assert.deepEqual(initial.errors,[]);assert.ok(!initial.keys.includes('printer'),'printer is lazy loaded');assert.ok(!initial.placements.some(p=>p.off),'objects should be on platform: '+JSON.stringify(initial.placements.filter(p=>p.off)));
+await page.screenshot({path:'reports/preview-desktop.png',fullPage:true});
+const paused=await page.locator('#time-display').innerText();await page.waitForTimeout(250);assert.equal(await page.locator('#time-display').innerText(),paused);
+await page.getByRole('button',{name:'Jump to A home takes shape'}).click();
+await page.waitForFunction(()=>window.__housing.timeline.time>=39);
+await page.locator('#speed').selectOption('2');await page.getByRole('button',{name:'Play',exact:true}).click();await page.waitForFunction(()=>window.__housing.timeline.time>=45);await page.getByRole('button',{name:'Pause',exact:true}).click();assert.equal(await page.evaluate(()=>window.__housing.diorama.entries.get('finished').pivot.visible),true);await page.screenshot({path:'reports/preview-completion.png',fullPage:true});
+await page.getByRole('button',{name:'Scene settings',exact:true}).click();await page.locator('[data-toggle="rover"]').uncheck();await page.waitForFunction(()=>!window.__housing.diorama.entries.get('rover').pivot.visible);await page.locator('#finished-toggle').check();await page.getByRole('button',{name:'Close settings'}).click();
+await page.getByRole('button',{name:'Restart',exact:true}).click();
+await page.getByRole('button',{name:'View in augmented reality'}).click();await page.getByLabel('Tracking target').selectOption('poster');await page.getByRole('button',{name:'Start camera',exact:true}).click();await page.waitForFunction(()=>document.querySelector('#ar-message').textContent.includes('missing'));
+await page.getByRole('button',{name:'Close AR setup'}).click();
+await page.reload();await page.waitForFunction(()=>window.__housing);await page.getByRole('button',{name:'Pause',exact:true}).click();await page.setViewportSize({width:390,height:844});await page.screenshot({path:'reports/preview-mobile.png',fullPage:true});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+await page.goto(new URL('?viewer=1',process.env.TEST_URL??'http://localhost:5173/').href);await page.waitForFunction(()=>document.querySelector('#asset-meta')?.textContent.includes('triangles'));assert.equal(await page.locator('.asset-card').count(),11);await page.getByRole('button',{name:/Tracked crane with integrated wall/}).click();await page.waitForFunction(()=>document.querySelector('#asset-meta')?.textContent.includes('triangles'));await page.screenshot({path:'reports/asset-viewer.png',fullPage:true});
+await fs.writeFile('reports/browser-smoke.json',JSON.stringify({initial,errors,failed},null,2));await browser.close();assert.deepEqual(errors,[]);console.log('Preview, playback, toggles, missing-target handling, mobile viewport, and viewer passed.');

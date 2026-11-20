@@ -1,0 +1,266 @@
+[
+  {
+    "filename": "arm-lite.glb",
+    "sizeMiB": 0.475,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "arm-standard.glb",
+    "sizeMiB": 1.976,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "crane-lite.glb",
+    "sizeMiB": 0.481,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "crane-standard.glb",
+    "sizeMiB": 4.602,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "excavator-lite.glb",
+    "sizeMiB": 0.442,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "excavator-standard.glb",
+    "sizeMiB": 3.054,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "finished-lite.glb",
+    "sizeMiB": 2.277,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "finished-standard.glb",
+    "sizeMiB": 2.428,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "finishedAlt-lite.glb",
+    "sizeMiB": 0.958,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "finishedAlt-standard.glb",
+    "sizeMiB": 1.191,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "frame-lite.glb",
+    "sizeMiB": 0.292,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "frame-standard.glb",
+    "sizeMiB": 1.085,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "frameAlt-lite.glb",
+    "sizeMiB": 0.236,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "frameAlt-standard.glb",
+    "sizeMiB": 1.027,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "ground-lite.glb",
+    "sizeMiB": 2.63,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "ground-standard.glb",
+    "sizeMiB": 4.101,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "lumber-lite.glb",
+    "sizeMiB": 0.487,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "lumber-standard.glb",
+    "sizeMiB": 2.427,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "printer-lite.glb",
+    "sizeMiB": 0.439,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "printer-standard.glb",
+    "sizeMiB": 7.191,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "rover-lite.glb",
+    "sizeMiB": 0.422,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "rover-standard.glb",
+    "sizeMiB": 1.312,
+    "kind": "runtime",
+    "generator": "glTF-Transform v4.2.1",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "Autonomous Yellow Excavator Render.glb",
+    "sizeMiB": 39.603,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "Industrial Concrete 3D Printer Building Foundations-2.glb",
+    "sizeMiB": 45.642,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "Isometric Construction Site Diorama.glb",
+    "sizeMiB": 39.4,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "Palletized Building Materials Collection (3).glb",
+    "sizeMiB": 36.875,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "Robotic Crawler Crane Lifting Wall Panel.glb",
+    "sizeMiB": 42.726,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "sample_2026-11-20T071123.041.glb",
+    "sizeMiB": 12.653,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "sample_2026-11-20T071708.664.glb",
+    "sizeMiB": 11.157,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "sample_2026-11-20T073451.446.glb",
+    "sizeMiB": 11.243,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "sample_2026-11-20T073844.642.glb",
+    "sizeMiB": 10.771,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "sample_2026-11-20T074504.681.glb",
+    "sizeMiB": 14.061,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  },
+  {
+    "filename": "sample_2026-11-20T075042.939.glb",
+    "sizeMiB": 11.01,
+    "kind": "raw original",
+    "generator": "https://github.com/mikedh/trimesh",
+    "copyrightPresent": false,
+    "licenseMetadataPresent": false
+  }
+]
