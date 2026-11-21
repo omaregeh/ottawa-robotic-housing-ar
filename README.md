@@ -49,23 +49,34 @@ Source units are arbitrary. The platform is normalized to 3 display units. Each 
 
 **Export JSON** downloads the complete configuration. Replace `src/config/scene.json` with that exported file to make the layout the project default. **Save in browser** persists only for that browser's editor; it does not silently change source files. Import validates numeric transforms and known model assignments. **Reset scene** removes the saved browser layout and reloads source defaults. You can edit AR `scale`, `position`, `rotation`, `targetUrl`, and `targetIndex` directly in the JSON; the editor controls the individual scene objects.
 
-## AR before the final poster is ready
+## Use the Ottawa poster in AR
 
-Open **View in augmented reality** and select **MindAR sample**. Open/print [`public/targets/development.png`](public/targets/development.png) on another surface, then select **Start camera** and grant permission. The paired `development.mind` file is MindAR's official sample. It is a test target, not Parliament Hill. A sample can be viewed on a second screen, though a matte print usually reduces glare.
+Print the [Letter PDF](public/print/ottawa-housing-poster-letter.pdf) in portrait at actual size, or use the [matching PNG](public/targets/poster.png) without cropping or changing its aspect ratio. The PDF has at least 0.25 inch margins and preserves the original 1103 × 1426 artwork (about 138 ppi on Letter). Use matte paper and even light; enlarging it does not add image detail.
 
-The timeline pauses when tracking is lost or the tab is hidden, hides with the anchor, and resumes from its current time on recovery. Your Play/Pause choice is preserved. Exit AR stops camera tracks and reloads the preview. Missing target files and camera failures return to the usable preview with an explanation. Camera access occurs only after Start camera. MindAR runs in the browser; there is no app installation or server-side camera upload.
+Scan the bottom-right QR to open the live website, choose **View in augmented reality**, leave **Ottawa campaign poster** selected, and press **Start camera**. Allow permission and frame most of the printed artwork. Parliament Hill stays static on the paper; the construction site is real animated 3D. The two black corner symbols are decorative and are not separate fiducial markers.
 
-## Add the final Parliament Hill poster
+The recovered Downloads image already contained a QR that decodes to the correct live URL. It was preserved without edits. The bundled PNG is byte-identical to that recovered source. The exact full PNG, including its QR and edges, was compiled locally with MindAR 1.2.5 into `public/targets/poster.mind` (single target, index 0). Asset hashes and dimensions are in `public/targets/poster.json`.
 
-1. Finish the **exact image you will print**. Keep Parliament Hill as static 2D artwork. Use a detailed, high-contrast, asymmetrical illustration with distinctive features across the image. Avoid huge flat regions, repeated patterns, strong glare and tiny features. Check image licensing. Do not use the QR code as the image target.
-2. Use the [official MindAR compiler](https://hiukim.github.io/mind-ar-js-doc/tools/compile). Add the final image and export the `.mind` file. For a single image use `targetIndex: 0`; for multiple targets match the compiler's order.
-3. Copy the exported result to `public/targets/poster.mind`. Optionally keep a print-reference image in `public/textures/`. This app does **not** render that image in AR: the physical poster supplies the background.
-4. Choose **My final Parliament Hill poster** in AR setup. Alternatively, upload the compiled `.mind` file for a browser-only trial. An upload does not save it into the project. Recompile whenever you materially change or crop the target artwork.
-5. Print with unchanged aspect ratio and test on a matte, flat surface in even light. First acquire most of the image in the camera view; then move slowly and inspect from different angles.
-6. Adjust the AR mapping in `scene.json`: target width is one MindAR unit. `scale: 0.30` makes the 3-unit platform roughly 0.9 of the printed target width. Rotation `+π/2` around X maps scene Y-up to target +Z, out of the paper. Scene +Z points toward the bottom edge of an upright target. `position` is in target coordinates, so negative target Y shifts the site toward the poster foreground. Tune this with the real poster angle and phone; upright and tabletop posters have different visual staging.
-7. Rebuild and redeploy, keeping image and compiled target versions paired.
+The timeline pauses when tracking is lost or the tab is hidden, hides with the anchor, and resumes from its current time on recovery. Your Play/Pause choice is preserved. Exit AR stops camera tracks and reloads the preview. Missing targets and camera failures return to the preview with an explanation. Camera access occurs only after Start camera. MindAR runs in the browser; there is no app installation or server-side camera upload.
 
-The decorative patterns on the GLB poles are scene details. They have no implemented marker-tracking role. The final poster and `.mind` are intentionally not fabricated or claimed as complete.
+For development, select **MindAR sample** and print/open [`development.png`](public/targets/development.png). Its paired target is retained unchanged. You can also upload a compiled `.mind` for a browser-only trial.
+
+## Update the poster later
+
+Recompile whenever you materially change the artwork, QR, or crop. Keep the image, PDF and compiled target together. From a Python environment with Pillow, ReportLab and zxing-cpp installed:
+
+```bash
+python tools/prepare-poster.py /path/to/updated-poster.png
+npm run poster:compile
+npm run validate
+bash tools/prepare-poster-camera.sh
+# With npm run dev running:
+npm run test:ar
+```
+
+The preparation tool requires the QR to decode to this project's HTTPS URL and never writes to its source argument. Compilation uses isolated local Chrome and the installed MindAR browser compiler; it uploads no artwork. Alternatively use the [official MindAR compiler](https://hiukim.github.io/mind-ar-js-doc/tools/compile), then update the asset checksums.
+
+The existing AR mapping is retained: target width is one MindAR unit; `scale: 0.30` makes the platform about 0.9 of the poster width. Rotation `+π/2` around X maps scene Y-up out of the paper. Target-space Y `-0.2` moves the site toward the foreground. Fine placement still needs checking with a physical print and phone.
 
 ## Mobile and HTTPS testing
 
@@ -93,9 +104,9 @@ npm run preview
 
 Serve the contents of `dist/` using an HTTPS static host such as GitHub Pages, Netlify, Cloudflare Pages or another static web server. Build command: `npm ci --ignore-scripts && npm run build`; output directory: `dist`. Normal builds use a portable relative base. GitHub Pages builds use the explicit repository base described below. The build omits original GLBs and the development editor. Optimized alternatives remain available to the public Asset lab. Keep `.glb`, `.mind`, `.png`, `.webp` and JS chunks served normally; avoid an SPA fallback that returns HTML for missing binary files.
 
-`public/_headers` provides camera/self and microphone-denied policy suggestions for hosts that support that file. HTTPS configuration belongs to the host; no TLS certificate or public deployment is created by this local task. Set compression and long cache lifetimes for versioned JS assets; invalidate models/targets when updating them. The dynamically imported MindAR bundle is larger than the preview bundle and loads only when starting AR.
+`public/_headers` provides camera/self and microphone-denied policy suggestions for hosts that support that file. The existing GitHub Pages deployment supplies HTTPS. Set compression and long cache lifetimes for versioned JS assets; invalidate models/targets when updating them. The dynamically imported MindAR bundle is larger than the preview bundle and loads only when starting AR.
 
-Once deployed, enter the **public HTTPS URL** into the AR setup's QR generator. Download the QR image and scan-test it before printing. Keep the QR separate from the tracked illustration, or finalize the complete composite before compiling the target. QR codes open the website; they do not supply 3D tracking.
+The poster already contains the production QR. The AR setup's optional QR generator is prefilled with the **public HTTPS URL**. Download the QR image and scan-test it before printing. Keep the QR separate from the tracked illustration, or finalize the complete composite before compiling the target. QR codes open the website; they do not supply 3D tracking.
 
 ## GitHub repository and Pages
 

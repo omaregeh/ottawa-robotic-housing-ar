@@ -9,7 +9,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "inventory": "python3 tools/inventory.py",
     "optimize": "node tools/optimize.mjs",
-    "validate": "node tools/validate.mjs",
+    "validate": "node tools/validate.mjs && node tools/validate-poster.mjs",
     "test": "node tools/timeline.test.mjs",
     "test:browser": "node tools/smoke.mjs",
     "test:ar": "node tools/ar-smoke.mjs",
@@ -19,7 +19,8 @@
     "validate:originals": "node tools/validate.mjs --require-originals",
     "check:repo": "node tools/check-repository.mjs",
     "originals:copy": "node tools/copy-originals.mjs",
-    "preview:pages": "vite preview --mode github-pages --host 0.0.0.0"
+    "preview:pages": "vite preview --mode github-pages --host 0.0.0.0",
+    "poster:compile": "node tools/compile-poster.mjs"
   },
   "dependencies": {
     "three": "0.160.1",

@@ -29,7 +29,7 @@ for (const file of names) {
     source = data.subarray(20, 20 + data.readUInt32LE(12)).toString('utf8');
   } else if (file.endsWith('.png') && file.startsWith('reports/thumbnails/')) {
     let offset=8;while(offset<data.length){const size=data.readUInt32BE(offset),type=data.subarray(offset+4,offset+8).toString();if(['tEXt','zTXt','iTXt','eXIf'].includes(type))findings.push({file,rule:'generated thumbnail metadata needs sanitization'});offset+=size+12;}
-  } else if (!/\.(?:png|jpe?g|webp|mind)$/.test(file)) source = data.toString('utf8');
+  } else if (!/\.(?:png|jpe?g|webp|mind|pdf)$/.test(file)) source = data.toString('utf8');
   if (source) {
     for (const [rule, pattern] of secretRules) if (pattern.test(source)) findings.push({ file, rule });
     const emails = source.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi) ?? [];

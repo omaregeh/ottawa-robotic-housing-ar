@@ -61,3 +61,6 @@ reports/asset-viewer.png
 reports/reference-contact-sheet.jpg
 reports/optimized-contact-sheet.jpg
 reports/optimized-thumbnails/
+
+# Poster synthetic-camera screenshots
+reports/*-ar-synthetic-*.png

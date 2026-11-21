@@ -1,6 +1,6 @@
 # Sources and licenses
 
-Project GLBs are copies of the user's Trellis2-generated Downloads files. Generation provenance is user-provided; no additional commercial-product authenticity or licensing is inferred. Confirm rights to the final Parliament Hill artwork before distribution.
+Project GLBs are copies of the user's Trellis2-generated Downloads files. Generation provenance is user-provided; no additional commercial-product authenticity or licensing is inferred. The owner supplied the Ottawa campaign artwork and requested its integration and deployment. No independent origin or reuse license for that poster is inferred.
 
 The bundled development target files are `card.png` and `card.mind` from the official [MindAR v1.2.5 example](https://github.com/hiukim/mind-ar-js/tree/v1.2.5/examples/image-tracking/assets/card-example), renamed only within this project's targets directory. MindAR is MIT licensed; the example is provided for development testing and is not campaign artwork. Check third-party artwork rights before using that sample outside development.
 
@@ -29,4 +29,4 @@ Microsoft’s [TRELLIS.2 software](https://github.com/microsoft/TRELLIS.2) and [
 
 The official MindAR sample is the known non-ChatGPT image among the 57 audited images. Its MIT notice is retained in `public/targets/MINDAR-LICENSE.txt`. Nonessential EXIF/XMP/user-comment metadata was removed while preserving pixels, colour interpretation and display orientation. The paired compiled target is unchanged.
 
-No final Parliament Hill artwork is included. Any future poster requires its own rights review. No commercial vendor, UN or college endorsement is implied. See `reports/final-publication-audit.md` for the review disposition and limits. No reuse license for the owner’s work is added merely by making the repository public.
+The supplied Ottawa poster is now included as public/targets/poster.png, with a derived printable PDF and MindAR target. It is preserved byte-for-byte from the recovered source; this adds no reuse license for the artwork. No commercial vendor, UN or college endorsement is implied. See `reports/final-publication-audit.md` for the review disposition and limits. No reuse license for the owner’s work is added merely by making the repository public.

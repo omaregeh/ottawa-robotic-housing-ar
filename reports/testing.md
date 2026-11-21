@@ -30,8 +30,11 @@ npm run validate
 npm run test:browser
 node tools/editor-smoke.mjs
 node tools/error-smoke.mjs
-bash tools/prepare-test-camera.sh
+bash tools/prepare-poster-camera.sh
 npm run test:ar
+# Optional official sample regression:
+bash tools/prepare-test-camera.sh
+TARGET_CHOICE=sample CAMERA_FIXTURE=.local/tracking-test.y4m npm run test:ar
 npm run build
 ```
 
@@ -39,7 +42,7 @@ Headless checks launch a temporary Chrome profile. They do not attach to the use
 
 ## Remaining limitations and required acceptance work
 
-- **Final target not supplied:** the Parliament Hill poster and matching compiled `poster.mind` still need to be finalized, compiled and tested. The official sample and browser `.mind` upload are usable interim paths. The real printed artwork remains the static 2D background.
+- **Poster integrated:** the recovered Ottawa campaign PNG, Letter PDF and matching `poster.mind` are now included. Local synthetic-camera acquisition, loss and recovery passed with the real MindAR runtime. Physical print and phone acceptance remain outstanding; see `poster-recovery.md`.
 - **No physical-device test:** Android/iOS camera permissions, optical acquisition, motion, realistic perspective, lighting, phone orientation, thermals and sustained frame rate remain to be checked on actual phones. The HTTPS Pages deployment is verified below; no physical-phone or printed-QR acceptance test is claimed.
 - **Approximate animation:** one mesh per source asset, no rig. Whole robot positioning/yaw, whole-frame rise/settle and material fades are used. There is no independently moving bucket, arm joint, crane cable or crane wall. This is an illustrative sequence, not an autonomous planning or engineering simulation.
 - **Asset gaps:** no dedicated partially clad house or standalone lumber-stack GLB was identified. The selected verified frame and palletized-material collection are documented fallbacks. The rejected overhead vacuum-bar asset is excluded.

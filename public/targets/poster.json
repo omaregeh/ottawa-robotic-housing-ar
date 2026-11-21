@@ -1,0 +1,24 @@
+{
+  "sourceFilename": "Building Ottawa’s Future AR Poster.png",
+  "sourceSha256": "32e2f3f67e8b26f955f72507d80715c4c28cb2509c03c912a5b2b400cf5d7ca6",
+  "image": "targets/poster.png",
+  "imageSha256": "32e2f3f67e8b26f955f72507d80715c4c28cb2509c03c912a5b2b400cf5d7ca6",
+  "width": 1103,
+  "height": 1426,
+  "qrURL": "https://omaregeh.github.io/ottawa-robotic-housing-ar/",
+  "qrRecoveredAlreadyValid": true,
+  "pdf": "print/ottawa-housing-poster-letter.pdf",
+  "pdfSha256": "488de6c9d3e64376164963d32dca9a8b76aee1bb35c05108650c292eeac6b819",
+  "printPage": "US Letter, portrait, fit artwork without cropping, minimum 0.25 inch margins",
+  "artworkPPI": 137.9,
+  "trackingTarget": "targets/poster.mind",
+  "targetIndex": 0,
+  "compiler": "mind-ar 1.2.5 browser Compiler, format v2",
+  "notes": "PNG is byte-identical to the recovered source. Compile the entire image, including its existing QR. Corner symbols are decorative; MindAR tracks image features.",
+  "trackingSha256": "c870b47c0eeb7e36864d31bf7cb8016c090484bb5551d8f4d9ddf89606583677",
+  "matchingKeyframes": 12,
+  "trackingFeatureCounts": [
+    45,
+    29
+  ]
+}
