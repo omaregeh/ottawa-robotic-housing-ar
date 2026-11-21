@@ -68,3 +68,7 @@ A clean file-only export was installed and built without raw GLBs. Runtime valid
 - The deployed MindAR runtime passed synthetic-camera detection, anchored rendering, target loss/hide, timeline freeze, recovery and camera cleanup. No physical camera or phone was used.
 
 Documentation-only follow-up commits do not change the static application files. The Pages workflow remains manual so future code changes require an explicit workflow run to deploy.
+
+## Recovered Ottawa poster deployment
+
+The final Ottawa poster PNG, Letter PDF and paired target were recovered/prepared and integrated on November 20, 2026. Application commit `ff406c4` was deployed successfully in [Pages run 44842188284](https://github.com/omaregeh/ottawa-robotic-housing-ar/actions/runs/44842188284). Local development, production build and live HTTPS browser/synthetic-camera checks all passed. The original image was preserved, its existing QR was verified, and the live asset set matched the tested build. See [poster recovery](poster-recovery.md) for exact assets, checks and remaining physical-phone acceptance.

@@ -27,3 +27,17 @@ Real MindAR runtime with a synthetic camera showing the actual Ottawa PNG passed
 ## Remaining acceptance work
 
 Try the printed PDF on real Android Chrome and iOS Safari: scan the physical QR, grant camera permission, acquire the whole poster, move through realistic angles and lighting, inspect foreground placement, watch the complete construction cycle, and verify loss/recovery and repeated start/exit. Physical phone optics, print quality, glare, temperature and frame rate cannot be certified by desktop synthetic tests.
+
+## Verified poster deployment
+
+- Application commit: `ff406c42f6112b88c2cfd2eac6983c0e67f4a572`.
+- Successful Pages workflow: https://github.com/omaregeh/ottawa-robotic-housing-ar/actions/runs/44842188284
+- Successful clean-install CI: https://github.com/omaregeh/ottawa-robotic-housing-ar/actions/runs/44842171288
+- Live website: https://omaregeh.github.io/ottawa-robotic-housing-ar/
+- Printable poster: https://omaregeh.github.io/ottawa-robotic-housing-ar/print/ottawa-housing-poster-letter.pdf
+- The four live poster assets (PNG, PDF, metadata and `.mind`) and five application entry resources matched the local Pages build byte-for-byte. The HTML references the current application bundles.
+- The existing 41-resource HTTP audit passed, including all 24 existing model/development-target checksums, private inventory path exclusion and raw-original 404. An initial exclusion probe received a transient 503; the direct retry and complete audit returned the expected result.
+- Isolated Chrome against the deployed HTTPS URL passed preview/playback, completed-house transition, toggles, missing-target recovery, mobile layout and asset viewer.
+- The deployed MindAR runtime passed synthetic-camera Ottawa poster acquisition, visible anchored 3D, loss/hide, timeline freeze, reacquisition and Exit AR cleanup, with no page or console errors.
+
+Only documentation changed after this deployment. The existing manual Pages workflow remains manual. Physical print and phone acceptance are still required as described above.
