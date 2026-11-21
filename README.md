@@ -76,7 +76,7 @@ npm run test:ar
 
 The preparation tool requires the QR to decode to this project's HTTPS URL and never writes to its source argument. Compilation uses isolated local Chrome and the installed MindAR browser compiler; it uploads no artwork. Alternatively use the [official MindAR compiler](https://hiukim.github.io/mind-ar-js-doc/tools/compile), then update the asset checksums.
 
-The existing AR mapping is retained: target width is one MindAR unit; `scale: 0.30` makes the platform about 0.9 of the poster width. Rotation `+π/2` around X maps scene Y-up out of the paper. Target-space Y `-0.2` moves the site toward the foreground. Fine placement still needs checking with a physical print and phone.
+The AR scene stands upright against a vertical poster: scene Y-up follows poster Y-up, and the ground projects outward perpendicular to the poster like a stage. Target width is one MindAR unit. `scale: 0.24`, rotation `[0, -0.3, 0]` (slight yaw) and position `[0, -0.16, 0.4]` keep the stage in front of the lower artwork and show the house and robots from the front and side. Move your phone slightly above and to either side to explore the scene. Fine placement still needs checking with a physical print and phone.
 
 ## Mobile and HTTPS testing
 

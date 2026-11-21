@@ -11,8 +11,9 @@ export async function startAR({container,target,config,diorama,onTracking,onStat
  const mind=new MindARThree({container,imageTargetSrc:target,maxTrack:1,uiLoading:'no',uiScanning:'no',uiError:'no',filterMinCF:.001,filterBeta:10,warmupTolerance:5,missTolerance:5});
  mind.renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));mind.renderer.outputColorSpace=THREE.SRGBColorSpace;mind.renderer.toneMapping=THREE.ACESFilmicToneMapping;lights(mind.scene);
  const anchor=mind.addAnchor(config.ar.targetIndex);const orientation=new THREE.Group();orientation.rotation.fromArray(config.ar.rotation);orientation.scale.setScalar(config.ar.scale);orientation.position.fromArray(config.ar.position);anchor.group.add(orientation);orientation.add(diorama.root);
- // MindAR target plane is XY with +Z out of the paper. +90° X maps scene +Y
- // toward the viewer, and scene +Z toward the bottom of an upright poster.
+ // MindAR target plane is XY with +Z out of the paper. Keep scene +Y aligned
+ // with poster +Y so the XZ ground projects out like a shelf. A slight yaw
+ // reveals the sides; positive target Z brings the stage in front of the poster.
  let active=true,tracked=false;
  anchor.onTargetFound=()=>{tracked=true;onTracking(true);onStatus('Target found · construction site anchored');};
  anchor.onTargetLost=()=>{tracked=false;onTracking(false);onStatus('Tracking lost · point back at the printed image');};

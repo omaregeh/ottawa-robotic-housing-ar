@@ -4,15 +4,15 @@
   "ar": {
     "targetUrl": "targets/poster.mind",
     "targetIndex": 0,
-    "scale": 0.3,
+    "scale": 0.24,
     "position": [
       0,
-      -0.2,
-      0
+      -0.16,
+      0.4
     ],
     "rotation": [
-      1.5707963267948966,
       0,
+      -0.3,
       0
     ]
   },

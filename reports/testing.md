@@ -72,3 +72,9 @@ Documentation-only follow-up commits do not change the static application files.
 ## Recovered Ottawa poster deployment
 
 The final Ottawa poster PNG, Letter PDF and paired target were recovered/prepared and integrated on November 20, 2026. Application commit `ff406c4` was deployed successfully in [Pages run 44842188284](https://github.com/omaregeh/ottawa-robotic-housing-ar/actions/runs/44842188284). Local development, production build and live HTTPS browser/synthetic-camera checks all passed. The original image was preserved, its existing QR was verified, and the live asset set matched the tested build. See [poster recovery](poster-recovery.md) for exact assets, checks and remaining physical-phone acceptance.
+
+## Upright poster staging
+
+A supplied iPhone screenshot (`Image (1).jpeg`) showed the stage lying flat against the vertical poster, giving an overhead view. The AR transform now keeps scene Y-up aligned with poster Y-up, so its ground is perpendicular to the poster. A slight yaw reveals the model sides; a forward offset places the stage in front of the artwork. Scale is 0.24 and target-space position is `[0, -0.16, 0.4]`, lifting the stage above the playback panel. The poster image, QR, print PDF, and compiled target are unchanged.
+
+The synthetic AR check now asserts that the actual anchored scene's up direction follows poster +Y and has no target-Z component, guarding against the previous overhead orientation. The final production upright layout passed acquisition, orientation assertions, loss/freeze, reacquisition and cleanup, and was visually inspected. Timeline, all asset validation checks and the Pages build passed.

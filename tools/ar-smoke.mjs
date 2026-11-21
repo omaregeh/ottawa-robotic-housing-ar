@@ -8,7 +8,10 @@ await page.getByRole('button',{name:'View in augmented reality'}).click();await 
 try{
  await page.waitForFunction(()=>window.__housing?.ar,null,{timeout:90000});
  await page.waitForFunction(()=>document.querySelector('#load-status').textContent.includes('Target found'),null,{timeout:90000});
- const anchored=await page.evaluate(()=>({anchorVisible:window.__housing.ar.anchor.group.visible,targetIndex:window.__housing.ar.anchor.targetIndex,tracking:document.querySelector('#load-status').textContent,time:window.__housing.timeline.time,video:window.__housing.ar.mind.video.readyState}));assert.equal(anchored.anchorVisible,true);await page.screenshot({path:`reports/${targetChoice}-ar-synthetic-found.png`});
+ const anchored=await page.evaluate(()=>{const h=window.__housing;const orientation=h.diorama.root.parent;return {anchorVisible:h.ar.anchor.group.visible,targetIndex:h.ar.anchor.targetIndex,tracking:document.querySelector('#load-status').textContent,time:h.timeline.time,video:h.ar.mind.video.readyState,sceneUpInTarget:h.camera.up.clone().set(0,1,0).applyQuaternion(orientation.quaternion).toArray(),stagePosition:orientation.position.toArray(),stageScale:orientation.scale.x};});assert.equal(anchored.anchorVisible,true);
+ assert.ok(anchored.sceneUpInTarget[1]>.99,'House and robots should stand up along the poster, rather than point toward the camera');
+ assert.ok(Math.abs(anchored.sceneUpInTarget[2])<.01,'Ground should be perpendicular to the poster');
+ await page.screenshot({path:`reports/${targetChoice}-ar-synthetic-found.png`});
  await page.waitForFunction(()=>document.querySelector('#load-status').textContent.includes('Tracking lost'),null,{timeout:30000});
  const lost=await page.evaluate(()=>({visible:window.__housing.ar.anchor.group.visible,time:window.__housing.timeline.time}));assert.equal(lost.visible,false);await page.waitForTimeout(500);const frozen=await page.evaluate(()=>window.__housing.timeline.time);assert.equal(frozen,lost.time);
  await page.waitForFunction(()=>document.querySelector('#load-status').textContent.includes('Target found'),null,{timeout:30000});
